@@ -10,19 +10,28 @@
     <div class="site-shell">
       <header class="topbar">
         <a class="brand" href="index.html">Yunxiang Wang</a>
-        <nav class="nav">
-          <a href="index.html">Home</a>
-          <a class="active" href="family.html">Family</a>
-          <a href="hobby.html">Hobby</a>
-          <a href="professional.html">Professional</a>
-        </nav>
+        <div class="topbar-actions">
+          <nav class="nav">
+            <a href="index.html"><span data-lang="zh">首页</span><span data-lang="en">Home</span></a>
+            <a class="active" href="family.html"><span data-lang="zh">家庭</span><span data-lang="en">Family</span></a>
+            <a href="hobby.html"><span data-lang="zh">爱好</span><span data-lang="en">Hobby</span></a>
+            <a href="professional.html"><span data-lang="zh">职业发展</span><span data-lang="en">Professional</span></a>
+          </nav>
+          <div class="lang-switch" aria-label="Language Switcher">
+            <button type="button" data-lang-toggle="zh">中文</button>
+            <button type="button" data-lang-toggle="en">EN</button>
+          </div>
+        </div>
       </header>
 
       <main class="section-stack">
         <section class="panel fade-up">
-          <span class="tag">Family</span>
-          <h1>Family Photos</h1>
-          <p>和家人在一起的日常与旅行照片。</p>
+          <span class="tag" data-lang="zh">家庭</span>
+          <span class="tag" data-lang="en">Family</span>
+          <h1 data-lang="zh">和家人的时光</h1>
+          <h1 data-lang="en">Family Moments</h1>
+          <p data-lang="zh">这里放的是我和家人在日常与旅行中的照片。对我来说，家人一直是最稳定也最重要的支持来源。</p>
+          <p data-lang="en">These are moments from daily life and trips with my family. Their support has always been one of the most important constants in my life.</p>
         </section>
 
         <section class="stack-swiper fade-up" data-stack-swipe>
@@ -34,8 +43,10 @@
             <figure class="stack-card"><img src="assets/images/family02.jpg" alt="家庭照片 5" /></figure>
           </div>
           <div class="stack-controls">
-            <button class="stack-btn" type="button" data-stack-dir="prev">← 上一张</button>
-            <button class="stack-btn" type="button" data-stack-dir="next">下一张 →</button>
+            <button class="stack-btn" type="button" data-stack-dir="prev" data-lang="zh">← 上一张</button>
+            <button class="stack-btn" type="button" data-stack-dir="prev" data-lang="en">← Previous</button>
+            <button class="stack-btn" type="button" data-stack-dir="next" data-lang="zh">下一张 →</button>
+            <button class="stack-btn" type="button" data-stack-dir="next" data-lang="en">Next →</button>
           </div>
         </section>
 

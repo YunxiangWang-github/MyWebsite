@@ -10,39 +10,59 @@
     <div class="site-shell">
       <header class="topbar">
         <a class="brand" href="index.html">Yunxiang Wang</a>
-        <nav class="nav">
-          <a href="index.html">Home</a>
-          <a href="family.html">Family</a>
-          <a href="hobby.html">Hobby</a>
-          <a class="active" href="professional.html">Professional</a>
-        </nav>
+        <div class="topbar-actions">
+          <nav class="nav">
+            <a href="index.html"><span data-lang="zh">首页</span><span data-lang="en">Home</span></a>
+            <a href="family.html"><span data-lang="zh">家庭</span><span data-lang="en">Family</span></a>
+            <a href="hobby.html"><span data-lang="zh">爱好</span><span data-lang="en">Hobby</span></a>
+            <a class="active" href="professional.html"><span data-lang="zh">职业发展</span><span data-lang="en">Professional</span></a>
+          </nav>
+          <div class="lang-switch" aria-label="Language Switcher">
+            <button type="button" data-lang-toggle="zh">中文</button>
+            <button type="button" data-lang-toggle="en">EN</button>
+          </div>
+        </div>
       </header>
 
       <main class="section-stack">
         <section class="panel fade-up">
-          <span class="tag">Professional</span>
-          <h1>Professional Profile for Potential Employers</h1>
-          <p>
+          <span class="tag" data-lang="zh">职业发展</span>
+          <span class="tag" data-lang="en">Professional</span>
+          <h1 data-lang="zh">给招聘方的职业画像</h1>
+          <h1 data-lang="en">Professional Profile for Potential Employers</h1>
+          <p data-lang="zh">
+            UIUC 信息科学 + 数据科学本科生，具备分析、AI 工作流和跨团队协作经验，正在寻找能够持续积累业务理解和技术执行力的机会。
+          </p>
+          <p data-lang="en">
             Data-focused undergraduate at University of Illinois Urbana-Champaign (Information Science + Data Science),
             with internship and project experience in analytics, AI workflows, and cross-functional execution.
           </p>
-          <div class="action-row" style="margin-top: 12px">
-            <a class="primary" href="assets/files/王云祥中文简历.pdf" target="_blank" rel="noreferrer">View Full Resume (PDF)</a>
+          <div class="action-row resume-actions" style="margin-top: 12px">
+            <div class="action-row">
+              <a class="primary" href="assets/files/王云祥中文简历.pdf" target="_blank" rel="noreferrer" data-lang="zh">查看中文简历 PDF</a>
+              <a class="primary" href="assets/files/Yunxiang-Resume.pdf" target="_blank" rel="noreferrer" data-lang="en">View English Resume (PDF)</a>
+              <a href="assets/files/Yunxiang-Resume.pdf" target="_blank" rel="noreferrer" data-lang="zh">英文简历 PDF</a>
+              <a href="assets/files/王云祥中文简历.pdf" target="_blank" rel="noreferrer" data-lang="en">Chinese Resume (PDF)</a>
+            </div>
             <a href="https://www.linkedin.com/in/yunxiangwang-555245327" target="_blank" rel="noreferrer">LinkedIn</a>
             <a href="https://github.com/YunxiangWang-github" target="_blank" rel="noreferrer">GitHub</a>
           </div>
+          <p class="resume-note" data-lang="zh">页面下方嵌入的简历会随语言切换自动显示中文版或英文版。</p>
+          <p class="resume-note" data-lang="en">The embedded resume below switches automatically with the selected language.</p>
         </section>
 
         <section class="profile-grid fade-up">
           <article class="info-card">
-            <h3>Education Snapshot</h3>
-            <p><strong>University:</strong> University of Illinois Urbana-Champaign</p>
-            <p><strong>Degree:</strong> B.S. in Information Science + Data Science</p>
-            <p><strong>Location:</strong> Urbana-Champaign, IL</p>
+            <h3 data-lang="zh">教育背景</h3>
+            <h3 data-lang="en">Education Snapshot</h3>
+            <p><strong data-lang="zh">学校:</strong><strong data-lang="en">University:</strong> University of Illinois Urbana-Champaign</p>
+            <p><strong data-lang="zh">专业:</strong><strong data-lang="en">Degree:</strong> B.S. in Information Science + Data Science</p>
+            <p><strong data-lang="zh">地点:</strong><strong data-lang="en">Location:</strong> Urbana-Champaign, IL</p>
             <p><strong>GPA:</strong> 3.97 / 4.00</p>
           </article>
           <article class="info-card">
-            <h3>Technical Toolkit</h3>
+            <h3 data-lang="zh">技术工具栈</h3>
+            <h3 data-lang="en">Technical Toolkit</h3>
             <div class="skill-cloud">
               <span>Python</span>
               <span>R</span>
@@ -59,8 +79,15 @@
 
         <section class="strength-grid fade-up">
           <article class="info-card">
-            <h3>Hard Skills (Execution)</h3>
-            <ul class="impact-list">
+            <h3 data-lang="zh">硬技能</h3>
+            <h3 data-lang="en">Hard Skills (Execution)</h3>
+            <ul class="impact-list" data-lang="zh">
+              <li>可以独立完成从数据清洗、分析到结论表达的完整流程。</li>
+              <li>有 SQL Server + PLC 的生产环境实践经验。</li>
+              <li>在生物相关研究项目中使用过 AI / ML 工具链，如 PyMOL、Rosetta / PyRosetta。</li>
+              <li>关注结果是否真正落地，并习惯用指标衡量改进效果。</li>
+            </ul>
+            <ul class="impact-list" data-lang="en">
               <li>Data analysis workflow from data cleaning to insight communication.</li>
               <li>Hands-on development with SQL Server + PLC in production scenarios.</li>
               <li>Applied AI/ML tools in bio-related research projects (PyMOL, Rosetta/PyRosetta).</li>
@@ -68,8 +95,15 @@
             </ul>
           </article>
           <article class="info-card">
-            <h3>Soft Skills (Collaboration)</h3>
-            <ul class="impact-list">
+            <h3 data-lang="zh">软技能</h3>
+            <h3 data-lang="en">Soft Skills (Collaboration)</h3>
+            <ul class="impact-list" data-lang="zh">
+              <li>能在医疗、运营和工程等不同角色之间做跨团队沟通。</li>
+              <li>有 ownership 意识，会主动发现瓶颈、提出方案并推动执行。</li>
+              <li>重视文档化和可交接性，习惯把工作整理成可复用流程。</li>
+              <li>中英双语沟通，TOEFL 111。</li>
+            </ul>
+            <ul class="impact-list" data-lang="en">
               <li>Cross-team communication across healthcare, operations, and engineering stakeholders.</li>
               <li>Ownership mindset: identify bottlenecks, propose fixes, and drive implementation.</li>
               <li>Structured delivery with documentation and repeatable handoff process.</li>
@@ -79,37 +113,34 @@
         </section>
 
         <section class="panel fade-up">
-          <h2>Selected Impact Highlights</h2>
-          <ul class="impact-list">
-            <li>
-              <strong>Trividio Health (Cambridge, MA, 2025.06 - 2025.08):</strong>
-              participated in U.S. market-oriented digital health and production support workflow.
-            </li>
-            <li>
-              Optimized first-response process for frontline issues, reducing response time by
-              <strong>30%</strong>.
-            </li>
-            <li>
-              Improved issue-feedback workflow, lowering unresolved problem rate by <strong>25%</strong>, and
-              maintaining average ticket handling time under <strong>25 minutes</strong>.
-            </li>
-            <li>
-              Built standardized knowledge transfer and training materials, enabling faster onboarding and
-              more consistent service quality.
-            </li>
-            <li>
-              <strong>AIVC Research Project (2025.08 - 2026.02):</strong>
-              worked on AI virtual cell and multimodal immune-state analysis pipeline for research tasks.
-            </li>
-            <li>
-              <strong>SANA Project (2024.08 - 2024.12):</strong>
-              led web-side design and user feedback iteration for a campus mental-health companion robot concept.
-            </li>
+          <h2 data-lang="zh">代表性经历与成果</h2>
+          <h2 data-lang="en">Selected Impact Highlights</h2>
+          <ul class="impact-list" data-lang="zh">
+            <li><strong>Trividio Health (Cambridge, MA, 2025.06 - 2025.08):</strong> 参与面向美国市场的数字医疗与生产支持流程。</li>
+            <li>优化一线问题的首次响应流程，使响应时间缩短 <strong>30%</strong>。</li>
+            <li>改进问题反馈机制，使未解决问题比例下降 <strong>25%</strong>，平均工单处理时间控制在 <strong>25 分钟</strong>以内。</li>
+            <li>建立标准化知识交接与培训材料，提升新成员上手速度与服务一致性。</li>
+            <li><strong>AIVC Research Project (2025.08 - 2026.02):</strong> 参与 AI virtual cell 与多模态免疫状态分析流程。</li>
+            <li><strong>SANA Project (2024.08 - 2024.12):</strong> 负责校园心理健康陪伴机器人概念项目中的网页设计与用户反馈迭代。</li>
+          </ul>
+          <ul class="impact-list" data-lang="en">
+            <li><strong>Trividio Health (Cambridge, MA, 2025.06 - 2025.08):</strong> participated in U.S. market-oriented digital health and production support workflow.</li>
+            <li>Optimized first-response process for frontline issues, reducing response time by <strong>30%</strong>.</li>
+            <li>Improved issue-feedback workflow, lowering unresolved problem rate by <strong>25%</strong>, and maintaining average ticket handling time under <strong>25 minutes</strong>.</li>
+            <li>Built standardized knowledge transfer and training materials, enabling faster onboarding and more consistent service quality.</li>
+            <li><strong>AIVC Research Project (2025.08 - 2026.02):</strong> worked on AI virtual cell and multimodal immune-state analysis pipeline for research tasks.</li>
+            <li><strong>SANA Project (2024.08 - 2024.12):</strong> led web-side design and user feedback iteration for a campus mental-health companion robot concept.</li>
           </ul>
         </section>
 
         <section class="resume-frame fade-up">
-          <iframe src="assets/files/王云祥中文简历.pdf" title="Yunxiang Wang Resume"></iframe>
+          <iframe
+            src="assets/files/王云祥中文简历.pdf"
+            title="Yunxiang Wang Resume"
+            data-resume-frame
+            data-resume-zh="assets/files/王云祥中文简历.pdf"
+            data-resume-en="assets/files/Yunxiang-Resume.pdf"
+          ></iframe>
         </section>
       </main>
 

@@ -1,10 +1,47 @@
 document.documentElement.classList.add('js');
 
+const LANG_KEY = 'site-language';
+const DEFAULT_LANG = 'zh';
+
 document.querySelectorAll('[data-year]').forEach((el) => {
   el.textContent = new Date().getFullYear();
 });
 
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function applyLanguage(lang) {
+  const nextLang = lang === 'en' ? 'en' : 'zh';
+  document.documentElement.lang = nextLang === 'en' ? 'en' : 'zh-CN';
+  document.body.dataset.lang = nextLang;
+
+  document.querySelectorAll('[data-lang]').forEach((el) => {
+    el.hidden = el.dataset.lang !== nextLang;
+  });
+
+  document.querySelectorAll('[data-lang-toggle]').forEach((btn) => {
+    const isActive = btn.dataset.langToggle === nextLang;
+    btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-pressed', String(isActive));
+  });
+
+  document.querySelectorAll('[data-resume-frame]').forEach((frame) => {
+    frame.src = nextLang === 'en' ? frame.dataset.resumeEn : frame.dataset.resumeZh;
+    frame.title = nextLang === 'en' ? 'Yunxiang Wang English Resume' : '王云祥中文简历';
+  });
+
+  window.localStorage.setItem(LANG_KEY, nextLang);
+}
+
+function initLanguageToggle() {
+  const savedLang = window.localStorage.getItem(LANG_KEY);
+  const lang = savedLang === 'en' ? 'en' : DEFAULT_LANG;
+
+  document.querySelectorAll('[data-lang-toggle]').forEach((btn) => {
+    btn.addEventListener('click', () => applyLanguage(btn.dataset.langToggle));
+  });
+
+  applyLanguage(lang);
+}
 
 function initReveal() {
   const animatedBlocks = document.querySelectorAll('.fade-up');
@@ -143,11 +180,13 @@ function initStackSwipers() {
 }
 
 if (!prefersReducedMotion) {
+  initLanguageToggle();
   initReveal();
   initPageTransition();
   initCarousels();
   initStackSwipers();
 } else {
+  initLanguageToggle();
   document.querySelectorAll('.fade-up').forEach((el) => el.classList.add('is-visible'));
   initCarousels();
   initStackSwipers();

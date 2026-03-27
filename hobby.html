@@ -10,28 +10,38 @@
     <div class="site-shell">
       <header class="topbar">
         <a class="brand" href="index.html">Yunxiang Wang</a>
-        <nav class="nav">
-          <a href="index.html">Home</a>
-          <a href="family.html">Family</a>
-          <a class="active" href="hobby.html">Hobby</a>
-          <a href="professional.html">Professional</a>
-        </nav>
+        <div class="topbar-actions">
+          <nav class="nav">
+            <a href="index.html"><span data-lang="zh">首页</span><span data-lang="en">Home</span></a>
+            <a href="family.html"><span data-lang="zh">家庭</span><span data-lang="en">Family</span></a>
+            <a class="active" href="hobby.html"><span data-lang="zh">爱好</span><span data-lang="en">Hobby</span></a>
+            <a href="professional.html"><span data-lang="zh">职业发展</span><span data-lang="en">Professional</span></a>
+          </nav>
+          <div class="lang-switch" aria-label="Language Switcher">
+            <button type="button" data-lang-toggle="zh">中文</button>
+            <button type="button" data-lang-toggle="en">EN</button>
+          </div>
+        </div>
       </header>
 
       <main class="section-stack">
         <section class="panel fade-up">
-          <span class="tag">Hobby</span>
-          <h1>这就是我的课余生活</h1>
-          <p>运动、朋友合照、旅行、公益。</p>
+          <span class="tag" data-lang="zh">爱好</span>
+          <span class="tag" data-lang="en">Hobby</span>
+          <h1 data-lang="zh">这就是我的课余生活</h1>
+          <h1 data-lang="en">How I Spend Life Beyond Class</h1>
+          <p data-lang="zh">运动、朋友、旅行和公益，让我的生活保持平衡，也让我一直对新环境保持好奇。</p>
+          <p data-lang="en">Sports, friendships, travel, and community service keep my life balanced and help me stay curious about the world around me.</p>
         </section>
 
         <section class="panel fade-up">
-          <h2>Stories</h2>
+          <h2 data-lang="zh">生活切片</h2>
+          <h2 data-lang="en">Stories</h2>
           <div class="story-strip">
-            <div class="story-chip"><img src="assets/images/hobby14.jpg" alt="运动" /><p>运动</p></div>
-            <div class="story-chip"><img src="assets/images/hobby01.jpg" alt="朋友合照" /><p>朋友合照</p></div>
-            <div class="story-chip"><img src="assets/images/hobby04.jpg" alt="旅行" /><p>旅行</p></div>
-            <div class="story-chip"><img src="assets/images/hobby13.jpg" alt="公益" /><p>公益</p></div>
+            <div class="story-chip"><img src="assets/images/hobby14.jpg" alt="运动" /><p data-lang="zh">运动</p><p data-lang="en">Sports</p></div>
+            <div class="story-chip"><img src="assets/images/hobby01.jpg" alt="朋友合照" /><p data-lang="zh">朋友</p><p data-lang="en">Friends</p></div>
+            <div class="story-chip"><img src="assets/images/hobby04.jpg" alt="旅行" /><p data-lang="zh">旅行</p><p data-lang="en">Travel</p></div>
+            <div class="story-chip"><img src="assets/images/hobby13.jpg" alt="公益" /><p data-lang="zh">公益</p><p data-lang="en">Service</p></div>
           </div>
         </section>
 
@@ -40,8 +50,10 @@
             <div class="ig-head">
               <div class="ig-avatar"><span>运</span></div>
               <div>
-                <p class="ig-title">运动</p>
-                <p class="ig-sub">Ski + Game Day</p>
+                <p class="ig-title" data-lang="zh">运动</p>
+                <p class="ig-title" data-lang="en">Sports</p>
+                <p class="ig-sub" data-lang="zh">滑雪 + 比赛日</p>
+                <p class="ig-sub" data-lang="en">Ski + Game Day</p>
               </div>
             </div>
             <img class="ig-main" src="assets/images/hobby14.jpg" alt="滑雪" />
@@ -49,15 +61,18 @@
               <img src="assets/images/hobby12.jpg" alt="橄榄球比赛" />
               <img src="assets/images/hobby02.jpg" alt="球场合照" />
             </div>
-            <p class="ig-caption">亮黄色滑雪服、橄榄球观赛和球场活动，都是我最喜欢的运动时刻。</p>
+            <p class="ig-caption" data-lang="zh">亮黄色滑雪服、橄榄球观赛和球场活动，都是我最喜欢的运动时刻。</p>
+            <p class="ig-caption" data-lang="en">Ski days, football games, and time on the field are some of my favorite ways to stay energized.</p>
           </article>
 
           <article class="ig-post">
             <div class="ig-head">
               <div class="ig-avatar"><span>友</span></div>
               <div>
-                <p class="ig-title">朋友合照</p>
-                <p class="ig-sub">Campus + Weekend</p>
+                <p class="ig-title" data-lang="zh">朋友合照</p>
+                <p class="ig-title" data-lang="en">Friends</p>
+                <p class="ig-sub" data-lang="zh">校园 + 周末</p>
+                <p class="ig-sub" data-lang="en">Campus + Weekend</p>
               </div>
             </div>
             <img class="ig-main" src="assets/images/hobby01.jpg" alt="校园朋友合照" />
@@ -65,15 +80,18 @@
               <img src="assets/images/hobby10.jpg" alt="朋友出行" />
               <img src="assets/images/hobby11.jpg" alt="朋友自拍" />
             </div>
-            <p class="ig-caption">和朋友一起学习、出行、合照，是我课余生活里最开心的一部分。</p>
+            <p class="ig-caption" data-lang="zh">和朋友一起学习、出行、合照，是我课余生活里最开心的一部分。</p>
+            <p class="ig-caption" data-lang="en">Studying, traveling, and simply spending time with friends makes campus life much more meaningful to me.</p>
           </article>
 
           <article class="ig-post">
             <div class="ig-head">
               <div class="ig-avatar"><span>旅</span></div>
               <div>
-                <p class="ig-title">旅行</p>
-                <p class="ig-sub">City Views</p>
+                <p class="ig-title" data-lang="zh">旅行</p>
+                <p class="ig-title" data-lang="en">Travel</p>
+                <p class="ig-sub" data-lang="zh">城市风景</p>
+                <p class="ig-sub" data-lang="en">City Views</p>
               </div>
             </div>
             <img class="ig-main" src="assets/images/hobby04.jpg" alt="海港城市风景" />
@@ -81,15 +99,18 @@
               <img src="assets/images/hobby07.jpg" alt="城市夜景" />
               <img src="assets/images/hobby08.jpg" alt="节日场景" />
             </div>
-            <p class="ig-caption">我喜欢在旅行中记录城市风景和夜景，感受不同地方的生活节奏。</p>
+            <p class="ig-caption" data-lang="zh">我喜欢在旅行中记录城市风景和夜景，感受不同地方的生活节奏。</p>
+            <p class="ig-caption" data-lang="en">I like capturing cityscapes and night views while traveling, especially the different rhythms each place carries.</p>
           </article>
 
           <article class="ig-post">
             <div class="ig-head">
               <div class="ig-avatar"><span>公</span></div>
               <div>
-                <p class="ig-title">公益</p>
-                <p class="ig-sub">Rural Service</p>
+                <p class="ig-title" data-lang="zh">公益</p>
+                <p class="ig-title" data-lang="en">Service</p>
+                <p class="ig-sub" data-lang="zh">乡村公益</p>
+                <p class="ig-sub" data-lang="en">Rural Service</p>
               </div>
             </div>
             <img class="ig-main" src="assets/images/hobby13.jpg" alt="乡村公益活动" />
@@ -97,7 +118,8 @@
               <img src="assets/images/hobby09.jpg" alt="公益行程中的景色" />
               <img src="assets/images/hobby05.jpg" alt="公益行程相关照片" />
             </div>
-            <p class="ig-caption">参与乡村公益活动，是我希望长期坚持做的事情。</p>
+            <p class="ig-caption" data-lang="zh">参与乡村公益活动，是我希望长期坚持做的事情。</p>
+            <p class="ig-caption" data-lang="en">Community service in rural areas is something I want to keep doing over the long term.</p>
           </article>
         </section>
       </main>

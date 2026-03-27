@@ -10,12 +10,18 @@
     <div class="site-shell">
       <header class="topbar">
         <a class="brand" href="index.html">Yunxiang Wang</a>
-        <nav class="nav">
-          <a class="active" href="index.html">Home</a>
-          <a href="family.html">Family</a>
-          <a href="hobby.html">Hobby</a>
-          <a href="professional.html">Professional</a>
-        </nav>
+        <div class="topbar-actions">
+          <nav class="nav">
+            <a class="active" href="index.html"><span data-lang="zh">首页</span><span data-lang="en">Home</span></a>
+            <a href="family.html"><span data-lang="zh">家庭</span><span data-lang="en">Family</span></a>
+            <a href="hobby.html"><span data-lang="zh">爱好</span><span data-lang="en">Hobby</span></a>
+            <a href="professional.html"><span data-lang="zh">职业发展</span><span data-lang="en">Professional</span></a>
+          </nav>
+          <div class="lang-switch" aria-label="Language Switcher">
+            <button type="button" data-lang-toggle="zh">中文</button>
+            <button type="button" data-lang-toggle="en">EN</button>
+          </div>
+        </div>
       </header>
 
       <main class="section-stack">
@@ -25,28 +31,42 @@
           </div>
 
           <div class="panel fade-up">
-            <span class="tag">About Me</span>
-            <span class="title-line">From Data to Impact</span>
+            <span class="tag" data-lang="zh">关于我</span>
+            <span class="tag" data-lang="en">About Me</span>
+            <span class="title-line" data-lang="zh">从数据走向真实影响</span>
+            <span class="title-line" data-lang="en">From Data to Impact</span>
             <h1>王云祥 | Yunxiang Wang</h1>
-            <p>
+            <p data-lang="zh">
               你好，很高兴你来到我的个人网站。我目前在 Champaign, IL，主修 Information Science + Data Science。
               我喜欢把复杂问题拆解成可执行步骤，也相信好的分析不仅要准确，还要真正帮助人做决策。
             </p>
-            <p>
+            <p data-lang="en">
+              Welcome to my personal website. I am currently based in Champaign, Illinois, studying Information
+              Science + Data Science. I enjoy breaking complex problems into clear, executable steps, and I believe
+              strong analysis should not only be accurate but also useful for real decisions.
+            </p>
+            <p data-lang="zh">
               除了学习和专业成长，我也很珍惜生活里的真实连接：和家人旅行、和朋友一起运动、参与公益活动。
               这些时刻让我保持热情，也不断提醒自己为什么要做有价值的事情。
+            </p>
+            <p data-lang="en">
+              Beyond academics and career growth, I care a lot about the human side of life: traveling with family,
+              staying active with friends, and participating in service work. Those experiences keep me grounded and
+              remind me why meaningful work matters.
             </p>
 
             <div class="quick-pills">
               <span>Champaign, IL</span>
               <span>B.S. in Information Science + Data Science</span>
-              <span>Open to Opportunities</span>
+              <span data-lang="zh">正在寻找机会</span>
+              <span data-lang="en">Open to Opportunities</span>
             </div>
           </div>
         </section>
 
         <section class="panel fade-up">
-          <h2>Contact</h2>
+          <h2 data-lang="zh">联系方式</h2>
+          <h2 data-lang="en">Contact</h2>
           <div class="contact-list">
             <p><strong>Email:</strong> <a href="mailto:yw041006@gmail.com">yw041006@gmail.com</a></p>
             <p>
@@ -61,8 +81,8 @@
                 >github.com/YunxiangWang-github</a
               >
             </p>
-            <p><strong>Phone (CN):</strong> <a href="tel:+8615367919190">+86 15367919190</a></p>
-            <p><strong>Phone (US):</strong> <a href="tel:+12172001032">+1 2172001032</a></p>
+            <p><strong data-lang="zh">中国电话:</strong><strong data-lang="en">Phone (CN):</strong> <a href="tel:+8615367919190">+86 15367919190</a></p>
+            <p><strong data-lang="zh">美国电话:</strong><strong data-lang="en">Phone (US):</strong> <a href="tel:+12172001032">+1 2172001032</a></p>
           </div>
         </section>
       </main>
