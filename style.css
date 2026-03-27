@@ -677,6 +677,12 @@ p {
   font-size: 0.9rem;
 }
 
+.project-link-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 14px;
+}
+
 footer {
   padding: 0 26px 26px;
   color: var(--muted);
